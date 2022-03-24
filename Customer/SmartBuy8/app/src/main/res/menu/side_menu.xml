@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHomeItem"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home"
+            android:visible="false" />
+    </group>
+
+    <item
+        android:id="@+id/navCartItem"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/cart" />
+    <item
+        android:id="@+id/navOrdersItem"
+        android:icon="@drawable/ic_orders"
+        android:title="@string/orders" />
+    <item
+        android:id="@+id/navSavedListsItem"
+        android:icon="@drawable/ic_saved_lists"
+        android:title="@string/saved_lists" />
+
+    <item
+        android:id="@+id/navMapItem"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map" />
+    <item
+        android:id="@+id/navAccountItem"
+        android:icon="@drawable/ic_user"
+        android:title="@string/account" />
+
+    <item
+        android:id="@+id/Fridge"
+        android:icon="@drawable/ic_user"
+        android:title="@string/account" />
+
+
+</menu>

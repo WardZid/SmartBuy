@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">SmartBuy</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="name">Name</string>
+    <string name="title_activity_shop">ShopActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Home</string>
+    <string name="productName">[product name]</string>
+    <string name="productDescription">[product description]</string>
+    <string name="signInToContinue">Sign In to Continue!</string>
+    <string name="signInCart">Sign in to view your cart!</string>
+    <string name="signInOrders">Sign in to view your order history!</string>
+    <string name="productPrice">$---</string>
+    <string name="productAvailability">Availability</string>
+    <string name="totalPerItem">Total:</string>
+    <string name="itemUnavailable">Item Unavailable</string>
+    <string name="errorConnection">Connection Error!</string>
+    <string name="amount">Amount</string>
+    <string name="numberOfItems">#---</string>
+    <string name="amountInCart">Amount:</string>
+    <string name="check_out">Check Out</string>
+    <string name="total">Total</string>
+    <string name="totalPrice">$---</string>
+    <string name="total_amount">Total Items</string>
+    <string name="total_items">#---</string>
+    <string name="too_many">*Some items in your cart are unavailable!</string>
+    <string name="empty_cart">Your cart is empty!</string>
+    <string name="go_shopping">Let\'s go Shopping!</string>
+    <string name="title_activity_drawerxxxxxxx">drawerxxxxxxx</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="saved_lists">Saved Lists</string>
+    <string name="map">Map</string>
+    <string name="account">Account</string>
+    <string name="orders">Orders</string>
+    <string name="search">Search</string>
+    <string name="select_a_product">Select a product</string>
+    <string name="find_a_product">Find a product!</string>
+    <string name="retry">Retry</string>
+    <string name="order_id">Order ID</string>
+    <string name="order_status">Order Status</string>
+    <string name="you_have_no_orders">You have No Orders.</string>
+    <string name="date_of_order">Date of order</string>
+    <string name="products">Products</string>
+    <string name="sign_up_date">Sign Up Date</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signInAccount">Sign in to view your account</string>
+
+</resources>
