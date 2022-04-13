@@ -14,7 +14,6 @@ This project is divided into 4 parts:
   The SQL Database
 
 Technical Overview:
-
   Desktop App:
     JAVA
     JDBC
