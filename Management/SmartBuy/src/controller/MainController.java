@@ -94,6 +94,7 @@ public class MainController {
 			else//the search entry is used in the statement to fetch appropriate products
 				rs = DBControl.statement.executeQuery("SELECT * FROM Products WHERE product_name LIKE '%"+searchEntry+"%'");
 			System.out.println("Products Recieved");
+			
 			int i=0,size =0;
 			//t get the size of the table received
 			rs.last();    // moves to the last row
