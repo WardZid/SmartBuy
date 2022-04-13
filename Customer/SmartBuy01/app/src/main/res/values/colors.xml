@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A80B9</color>
+    <color name="colorPrimaryDark">#226693</color>
+    <color name="colorAccent">#3BABFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="itemName">#000000</color>
+    <color name="itemDescription">#000000</color>
+    <color name="greenMoney">#4CAF50</color>
+    <color name="available">#75CF78</color>
+    <color name="outOfStock">#F44336</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

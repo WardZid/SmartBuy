@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".control.Activities.ProductsActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:animateLayoutChanges="true">
+
+    <include
+        android:id="@+id/productsToolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/productsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/productSearchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:drawableEnd="@drawable/ic_search"
+            android:hint="@string/search"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@android:color/black"
+            app:met_textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="20dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/productsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:scrollbars="vertical"
+            android:background="@drawable/gradient_bg"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
