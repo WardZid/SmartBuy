@@ -13,7 +13,7 @@ This project is divided into 4 parts:
   The Server
   The SQL Database
 
-Technical Overview:
+Technical Overview:<br/>
   Desktop App:
     JAVA
     JDBC
