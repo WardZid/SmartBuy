@@ -14,7 +14,7 @@ This project is divided into 4 parts:
   The SQL Database
 
 Technical Overview:
-  Desktop App:
+--Desktop App:
     JAVA
     JDBC
     Swing
