@@ -12,6 +12,8 @@ SmartBuy boasts a fully working product suggestion in the customer Android app t
 
 SmartBuy also ranks order preperation priority using our own priority equation: P=(w+t)/t >> where (w) is the amount of time the order has been waiting and (t) is the exptected time needed to prepare the order. and that leaves P to be the final priority value of said order.
 
+*For Hebrew explanation please see the Algoritms png*
+
 #### This project is divided into 4 parts:
 1. The Management Desktop Application
 2. The Customer Android Application
