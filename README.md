@@ -6,6 +6,7 @@
   - Yara Mazareeb
 
 SmartBuy was made as a final project for our Software Practical Engineering degree (הנדסאים) at Ort Braude College.
+SmartBuy boasts a fully working product suggestion in the customer Android app that works by matching customers with respective ranks which are calculated by comparing their buying habits.
 
 #### This project is divided into 4 parts:
 1. The Management Desktop Application
