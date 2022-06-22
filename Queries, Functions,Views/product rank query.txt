@@ -1,0 +1,4 @@
+select PO.product_id,sum(PO.amount_in_order) as amount 
+from products_in_order PO
+where order_id in (select order_id from orders where user_id = 2)
+group by PO.product_id

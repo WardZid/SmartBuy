@@ -1,0 +1,1 @@
+SELECT * FROM products,(SELECT PO.product_id AS top,sum(PO.amount_in_order) AS sold FROM products_in_order PO WHERE PO.order_id IN (SELECT order_id FROM orders WHERE added_at > NOW() - INTERVAL 1 WEEK) GROUP BY Po.product_id ORDER BY sold DESC LIMIT 10) T WHERE product_id =T.top

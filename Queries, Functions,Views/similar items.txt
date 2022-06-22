@@ -1,0 +1,19 @@
+select SS.A as similarities
+from
+(
+	select PO.product_id as A
+	from products_in_order PO
+	where order_id in (select order_id 
+						from orders 
+						where user_id = 2)
+	group by PO.product_id ) SS
+INNER JOIN 
+(
+	select PO.product_id as B
+	from products_in_order PO
+	where order_id in (select order_id 
+						from orders 
+						where user_id = 15)
+	group by PO.product_id
+) S 
+ON SS.A=S.B

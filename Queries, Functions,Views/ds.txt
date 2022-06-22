@@ -1,0 +1,10 @@
+INSERT INTO `orders` (`user_id`,`added_at`,`order_status`) VALUES (2,current_timestamp(),'JUST_ADDED');
+
+
+INSERT INTO `products_in_order` (`order_id`,`product_id`,`amount_in_order`)
+
+SELECT O.order_id,C.product_id,C.amount_in_cart
+
+FROM orders O, cart C
+
+WHERE C.user_id = O.user_id AND C.user_id = 2 AND O.order_status = 'JUST ADDED';

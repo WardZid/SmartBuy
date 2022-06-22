@@ -1,0 +1,41 @@
+
+SET @row_number = 0; 
+
+
+select U.user_id,count(PO.product_id) as similarities,(count(PO.product_id)/(select count(product_id) from products_in_order POrd, orders Ord where Ord.order_id = POrd.order_id AND U.user_id=Ord.user_id group by Ord.user_id))/(avg(PR.F))
+from users U,orders O,products_in_order PO,(
+select SS.A as similarities
+from
+(
+select (@row_number:=@row_number + 1) AS num,PR.*
+from(
+select PIO.product_id,sum(PIO.amount_in_order) as amount
+from products_in_order PIO
+where order_id in (select order_id from orders where user_id = 2) and PIO.product_id in (
+select SS.A as similarities
+from
+(
+	select  PIIO.product_id as A
+	from products_in_order PIIO
+	where order_id in (select order_id 
+						from orders 
+						where user_id = 2)
+	group by PIIO.product_id ) SS
+INNER JOIN 
+(
+	select PIIO.product_id as B
+	from products_in_order PIIO
+	where order_id in (select order_id 
+						from orders 
+						where user_id = U.user_id)
+	group by PIIO.product_id
+) S 
+ON SS.A=S.B
+)
+group by PIO.product_id
+)PR
+order by PR.amount desc
+) F
+where U.user_id != 2 AND O.order_id = PO.order_id AND U.user_id=O.user_id AND PO.product_id IN (select PO.product_id as A from products_in_order PO where order_id in (select order_id from orders where user_id = 2) group by PO.product_id )
+group by U.user_id
+order by similarities desc
