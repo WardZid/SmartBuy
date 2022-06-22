@@ -6,7 +6,11 @@
   - Yara Mazareeb
 
 SmartBuy was made as a final project for our Software Practical Engineering degree (הנדסאים) at Ort Braude College.
-SmartBuy boasts a fully working product suggestion in the customer Android app that works by matching customers with respective ranks which are calculated by comparing their buying habits.
+
+### Algorithms:
+SmartBuy boasts a fully working product suggestion in the customer Android app that works by matching customers with respective ranks which are calculated by comparing their buying habits. The equation looks like this: P=((|A∩B|)-|B|)/m >> where A is the number of similar items for person a, B is the same for person b, and m is the average difference of priority between both people (a and b).
+
+SmartBuy also ranks order preperation priority using our own priority equation: P=(w+t)/t >> where (w) is the amount of time the order has been waiting and (t) is the exptected time needed to prepare the order. and that leaves P to be the final priority value of said order.
 
 #### This project is divided into 4 parts:
 1. The Management Desktop Application
